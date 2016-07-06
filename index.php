@@ -47,7 +47,7 @@ $txtFeetsize = "m Sp / closed toe";
 $pdf->setXY(45,8);
 $pdf->MultiCell(50,7, $txtFeetsize, 0,'R', false);
 
-$pdf->Output('F','' ,true);
+$pdf->Output('doc.pdf','F' ,true);
 
 ?>
 <!DOCTYPE html>
@@ -57,6 +57,7 @@ $pdf->Output('F','' ,true);
         <title></title>
     </head>
     <body>
+        <object height="200" data="doc.pdf" type="application/pdf" width="1000"
         <?php
         // put your code here
         ?>

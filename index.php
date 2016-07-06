@@ -47,7 +47,7 @@ $txtFeetsize = "m Sp / closed toe";
 $pdf->setXY(45,8);
 $pdf->MultiCell(50,7, $txtFeetsize, 0,'R', false);
 
-$pdf->Output();
+$pdf->Output('F','' ,true);
 
 ?>
 <!DOCTYPE html>
